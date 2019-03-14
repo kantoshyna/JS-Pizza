@@ -83,6 +83,10 @@ ul li a {
     .active {
         display: block;
     }
+
+    .c2{
+        visibility: hidden;
+    }
 }
 
 .minus {
@@ -91,4 +95,53 @@ ul li a {
 
 .plus {
     background-color: green !important;
+}
+
+.btn-primary {
+    background-color: #f0991b !important;
+    color: white;
+    border: none;
+}
+
+.price-block{
+    display: inline;
+    width: 50%;
+}
+
+#cart {
+    background-color: rgb(243, 243, 243);
+}
+
+.big-cont {
+    border: none; 
+    z-index: 2;
+    height: 100%;
+    background-color: white;
+    padding: 0;
+    position: fixed;
+    right: 0;
+}
+
+.bl-orange-label {
+
+    font-size: 0.64285714rem;
+    background: #f2711c;
+    color: #fff;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.7;
+    z-index: 2;
+    font-size: 14px;
+    
+}
+
+@media (max-width:900px){
+    .c1{
+        visibility: none;
+    }
+
 }
