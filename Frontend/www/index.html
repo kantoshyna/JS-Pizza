@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8" />
+  <title>Pizza</title>
+
+  <!-- Bootsrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+
+  <!-- LESS основний файл -->
+  <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+  <!-- LESS JavaScript компілятор -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+
+
+  <div class="our-container" style="margin: 0; padding: 0">
+    <!--<div class="fixed-badge">
+      PIZZA
+      <h3 style="margin: 0">KMA</h3>
+    </div>-->
+
+    <img src="assets/images/flag.png" style="position: fixed; z-index: 2; left: 10px">
+
+    <div class="row">
+      <div class="col-md-10 col-sm-8">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 1; background: #080808d1; position: fixed; width: 100%; border-radius: 0; height: 61px">
+
+        </nav>
+
+        <div class="all-pizas">
+          Усі піци
+        </div>
+
+        <nav style=" padding: 5px 0;">
+          <div class="toggle"><i class="fas fa-bars menu"></i></div>
+          <ul>
+            <li style="background-color: #f0991b; color: white">One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+          </ul>
+        </nav>
+
+        <div id="pizza_list" style="padding-left: 15%">
+
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4" id="cart" style="border: 1px black solid">
+        <h1>Heading</h1>
+      </div>
+    </div>
+  </div>
+
+  <img src="assets/images/flag2.png" style="position: fixed; z-index: 2; left: 10px; bottom: 0">
+  <!-- jQuery JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!--Bootsrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!--Own JavaScript -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

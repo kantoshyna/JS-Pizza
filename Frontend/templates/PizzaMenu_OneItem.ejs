@@ -28,8 +28,11 @@ function getIngredientsArray(pizza) {
         <% } %>
 
         <div class="caption">
-            <span class="title"><%= pizza.title %></span>
-            <div class="type"><%= pizza.type %></div>
+            <span class="title">
+                <%= pizza.title %></span>
+            <div class="type">
+                <%= pizza.type %>
+            </div>
             <div class="description">
                 <%= getIngredientsArray(pizza).join(", ") %>
             </div>
@@ -37,5 +40,7 @@ function getIngredientsArray(pizza) {
 
         <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
         <button class="btn btn-primary buy-big">Купити велику</button>
+        <!-- ДОПИСАТИ -->
+        <button class="btn btn-primary buy-small">Купити малу</button>
     </div>
 </div>
