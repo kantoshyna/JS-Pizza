@@ -23,6 +23,11 @@
     padding-left: 23%;
 }
 
+.sum {
+    text-align: right;
+    padding-right: 5px;
+}
+
 nav {
     width: 100%;
 }
@@ -84,7 +89,7 @@ ul li a {
         display: block;
     }
 
-    .c2{
+    .c2 {
         visibility: hidden;
     }
 }
@@ -103,7 +108,7 @@ ul li a {
     border: none;
 }
 
-.price-block{
+.price-block {
     display: inline;
     width: 50%;
 }
@@ -113,7 +118,7 @@ ul li a {
 }
 
 .big-cont {
-    border: none; 
+    border: none;
     z-index: 2;
     height: 100%;
     background-color: white;
@@ -136,11 +141,11 @@ ul li a {
     line-height: 1.7;
     z-index: 2;
     font-size: 14px;
-    
+
 }
 
-@media (max-width:900px){
-    .c1{
+@media (max-width:900px) {
+    .c1 {
         visibility: none;
     }
 

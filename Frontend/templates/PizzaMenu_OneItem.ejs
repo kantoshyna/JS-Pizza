@@ -25,6 +25,8 @@ function getIngredientsArray(pizza) {
         <span class="label label-danger">Нова</span>
         <% } else if(pizza.is_popular) {%>
         <span class="label label-success">Популярна</span>
+        <% } else { %>
+        <span class="label label-success" style="visibility: hidden;">Популярна</span>
         <% } %>
 
         <div class="caption">
@@ -33,42 +35,43 @@ function getIngredientsArray(pizza) {
             <div class="type">
                 <%= pizza.type %>
             </div>
-            <div class="description">
+            <div class="description" style="height: 118px;">
                 <%= getIngredientsArray(pizza).join(", ") %>
             </div>
         </div>
 
-        <div class="row" style="text-align: center;display: flex" >
+        <div class="row" style="text-align: center;display: flex">
             <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
 
             <% if(pizza.big_size) { %>
             <div class="price-block">
-                <img src="../www/assets/images/circle.png">
+                <img src="assets/images/circle.png">
                 <%= pizza.big_size.size %>
                 <br>
-                <img src="../www/assets/images/wage.png">
+                <img src="assets/images/wage.png">
                 <%= pizza.big_size.weight %>
                 <br>
-                    <b><%= pizza.big_size.price %> грн.</b>
-                    <br>
+                <b><%= pizza.big_size.price %> грн.</b>
+                <br>
                 <button class="btn btn-primary buy-big">Купити</button>
                 <br>
             </div>
 
             <% } %>
 
-            <!-- ДОПИСАТИ -->
+            <% if(pizza.small_size) { %>
             <div class="price-block">
-                <img src="../www/assets/images/circle.png">
+                <img src="assets/images/circle.png">
                 <%= pizza.small_size.size %>
                 <br>
-                <img src="../www/assets/images/wage.png">
+                <img src="assets/images/wage.png">
                 <%= pizza.small_size.weight %>
                 <br>
-            <b><%= pizza.small_size.price %> грн.</b>
-                    <br>
+                <b><%= pizza.small_size.price %> грн.</b>
+                <br>
                 <button class="btn btn-primary buy-small">Купити</button>
             </div>
+            <% } %>
 
         </div>
 
